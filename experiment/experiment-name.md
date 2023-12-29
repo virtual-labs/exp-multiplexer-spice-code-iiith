@@ -1,1 +1,1 @@
-## Design of Multiplexer Gates using SPICE Code
+## Design of Multiplexer using SPICE Code

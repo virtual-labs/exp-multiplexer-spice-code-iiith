@@ -2,38 +2,140 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the purpose of a 2:1 multiplexer?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To select one of two inputs based on a control signal.",
+        "b": "To combine two inputs into a single output.",
+        "c": "To perform logical AND operation on two inputs.",
+        "d": "To perform logical OR operation on two inputs."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "A 2:1 multiplexer selects one of two inputs based on a control signal, making it a versatile digital circuit component.",
+        "b": "Incorrect. The purpose of a 2:1 multiplexer is to select between two inputs, not combine them.",
+        "c": "Incorrect. A 2:1 multiplexer is not designed for logical AND operation.",
+        "d": "Incorrect. A 2:1 multiplexer is not designed for logical OR operation."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which type of transistors are commonly used in pass-transistor logic circuits?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "NPN transistors",
+        "b": "PNP transistors",
+        "c": "Both NPN and PNP transistors",
+        "d": "MOSFET transistors"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. NPN transistors are not commonly used in pass-transistor logic circuits.",
+        "b": "Incorrect. PNP transistors are not commonly used in pass-transistor logic circuits.",
+        "c": "Correct. Pass-transistor logic circuits can use both NPN and PNP transistors.",
+        "d": "Incorrect. While MOSFET transistors are commonly used, they are not the only type used in pass-transistor logic."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What is the function of pass transistors in a 2:1 multiplexer?",
+      "answers": {
+        "a": "To control the data flow between inputs and output.",
+        "b": "To amplify the input signals.",
+        "c": "To generate clock signals.",
+        "d": "To perform arithmetic operations."
+      },
+      "explanations": {
+        "a": "Correct. Pass transistors control the data flow between inputs and output in a 2:1 multiplexer.",
+        "b": "Incorrect. Pass transistors do not amplify signals in a 2:1 multiplexer.",
+        "c": "Incorrect. Pass transistors are not used to generate clock signals.",
+        "d": "Incorrect. Pass transistors are not designed for performing arithmetic operations in this context."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a 2:1 multiplexer, how many control lines are required to select between two inputs?",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "explanations": {
+        "b": "Incorrect. Two control lines are not required to select between two inputs.",
+        "a": "Correct. One control lines are required to select between two inputs in a 2:1 multiplexer.",
+        "c": "Incorrect. Three control lines are not necessary for a 2:1 multiplexer.",
+        "d": "Incorrect. Four control lines are excessive for a 2:1 multiplexer."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the output of a 2:1 multiplexer when the control lines are set to 0?",
+      "answers": {
+        "a": "Output is the first input.",
+        "b": "Output is the second input.",
+        "c": "Output is the logical AND of the inputs.",
+        "d": "Output is the logical OR of the inputs."
+      },
+      "explanations": {
+        "a": "Correct. When the control lines are set to 0, the output is the first input.",
+        "b": "Incorrect. When the control lines are set to 00, the output is the first input.",
+        "c": "Incorrect. A 2:1 multiplexer does not perform logical AND operation.",
+        "d": "Incorrect. A 2:1 multiplexer does not perform logical OR operation."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the advantage of using pass-transistor logic in digital circuits?",
+      "answers": {
+        "a": "Lower power consumption.",
+        "b": "Higher speed of operation.",
+        "c": "Greater noise immunity.",
+        "d": "Simpler design."
+      },
+      "explanations": {
+        "a": "Correct. Pass-transistor logic is known for its lower power consumption compared to other logic families.",
+        "b": "Incorrect. While pass-transistor logic can be fast, higher speed is not its primary advantage.",
+        "c": "Incorrect. Noise immunity is not a primary advantage of pass-transistor logic.",
+        "d": "Incorrect. Pass-transistor logic can be complex, and simplicity is not always guaranteed."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What happens in a 2:1 multiplexer when the control lines are set to 1?",
+      "answers": {
+        "a": "Output is the first input.",
+        "b": "Output is the second input.",
+        "c": "Output is the logical AND of the inputs.",
+        "d": "Output is the logical OR of the inputs."
+      },
+      "explanations": {
+        "a": "Incorrect. When the control lines are set to 1, the output is the second input.",
+        "b": "Correct. When the control lines are set to 1, the output is the second input.",
+        "c": "Incorrect. A 2:1 multiplexer does not perform logical AND operation.",
+        "d": "Incorrect. A 2:1 multiplexer does not perform logical OR operation."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the primary disadvantage of pass-transistor logic circuits?",
+      "answers": {
+        "a": "Higher power consumption.",
+        "b": "Limited fan-out.",
+        "c": "Slower speed of operation.",
+        "d": "Greater complexity."
+      },
+      "explanations": {
+        "a": "Incorrect. Pass-transistor logic is known for lower power consumption.",
+        "b": "Correct. Pass-transistor logic circuits have a limited fan-out, restricting the number of gates that can be driven.",
+        "c": "Incorrect. Pass-transistor logic can be fast, and speed is not its primary disadvantage.",
+        "d": "Incorrect. Pass-transistor logic is often considered simpler compared to some other logic families."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
   ]
 }

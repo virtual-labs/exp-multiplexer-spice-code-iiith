@@ -4,18 +4,18 @@
     {
       "question": "What is the purpose of a 2:1 multiplexer?",
       "answers": {
-        "a": "To select one of two inputs based on a control signal.",
-        "b": "To combine two inputs into a single output.",
+        "a": "To combine two inputs into a single output.",
+        "b": "To select one of two inputs based on a control signal.",
         "c": "To perform logical AND operation on two inputs.",
         "d": "To perform logical OR operation on two inputs."
       },
       "explanations": {
-        "a": "A 2:1 multiplexer selects one of two inputs based on a control signal, making it a versatile digital circuit component.",
-        "b": "Incorrect. The purpose of a 2:1 multiplexer is to select between two inputs, not combine them.",
+        "a": "Incorrect. The purpose of a 2:1 multiplexer is to select between two inputs, not combine them.",
+        "b": "A 2:1 multiplexer selects one of two inputs based on a control signal, making it a versatile digital circuit component.",
         "c": "Incorrect. A 2:1 multiplexer is not designed for logical AND operation.",
         "d": "Incorrect. A 2:1 multiplexer is not designed for logical OR operation."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {

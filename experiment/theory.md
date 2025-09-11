@@ -1,4 +1,4 @@
-## Multiplexer using Pass Transistor
+### Multiplexer using Pass Transistor
 
 Multiplexer or MUX, which is also known as data selector, is a combinational circuit with multiple input and single output. At a time a single input is selected and given as output based on select signal.
 
@@ -9,7 +9,7 @@ A multiplexer selects binary information present on any one on the input line, d
 1. Pass transistor multiplexer uses fewer transistors as compared to fully complementary gates
 2. Pass transistor is somewhat faster than complementary switch
 
-## SPICE - Introduction and Fundamentals
+### SPICE - Introduction and Fundamentals
 
 In the experiments we have done till now we have designed gates by arranging transistors in various fashions. The simulation of these designs gave graphs of output voltages and we analyzed how these graph changes with varying different parameters of the transistor. Now when you place a transistor on screen there is a back end code which tells a simulator what are the points to which the transistor's substrate, gate, drain, source are connected. The language in which this information is conveyed is spice.
 
@@ -32,7 +32,7 @@ Several types of circuit analyses can be done using SPICE program. Here are the 
 
 All analyses can be done at different temperatures. The default temperature is 300K.
 
-## SPICE Structure and Syntax
+### SPICE Structure and Syntax
 
 A spice input file, also called source file, consists of three parts:
 
@@ -92,7 +92,7 @@ The output variables are Y1, Y2 and can be voltage or currents in voltage source
 
 <img src="images/8.png" width="500">
 
-## SPICE Netlist Example - Inverter Circuit
+### SPICE Netlist Example - Inverter Circuit
 
 Complete example (Inverter-Netlist):
 
@@ -186,7 +186,20 @@ First line of spice code is always a comment. So this line is always ignored by 
 11. **.end**
     - Marks the end of the spice code.
 
-## 2:1 Multiplexer using Pass Transistor Logic
+### 2:1 Multiplexer using Pass Transistor Logic
+
+#### Transistor Count in Multiplexer Design
+
+One of the key advantages of using pass transistor logic for multiplexer design is the reduction in transistor count compared to traditional CMOS logic implementations. In a conventional CMOS 2:1 multiplexer, typically 8-10 transistors are required to implement the logic using NAND, NOR, and inverter gates. However, using pass transistor logic, the same function can be achieved with as few as 4 transistors (2 NMOS and 2 PMOS for a transmission gate-based design), or even fewer if only NMOS pass transistors are used (with the caveat of degraded logic levels).
+
+This reduction in transistor count leads to smaller chip area, lower parasitic capacitance, and potentially higher speed. However, designers must also consider the impact on signal integrity and logic level restoration, especially when only NMOS pass transistors are used, as the output high level may be degraded by the threshold voltage drop.
+
+**Example:**
+
+- CMOS logic implementation of a 2:1 MUX: ~8-10 transistors
+- Pass transistor logic implementation: 4 transistors (using transmission gates)
+
+Thus, pass transistor logic is preferred in applications where area and speed are critical, and logic level degradation can be tolerated or mitigated.
 
 Transmission gate is the parallel combination of NMOS and PMOS. When control signal (signal A) is high then transmission gate passes signal from input to output. NMOS passes good zero and PMOS passes good one, putting NMOS and PMOS in parallel produces a transmission gate that passes both logic levels good.
 

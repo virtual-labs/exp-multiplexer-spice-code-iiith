@@ -520,7 +520,7 @@ export function printObsTable() {
     <div class="is-size-4">Output graph</div>
     <img src='images/output_mux.png' alt='image of xor output graph'>
 </div>`;
-        document.getElementById("result").innerHTML = "<span>&#10003;</span> Success"
+        document.getElementById("result").innerHTML = "<span>&#10003;</span> Success<br>Your arrangement is correct, even though it differs from the diagram. Multiple transistor arrangements are possible for this logic gate.";
         document.getElementById("result").className = "text-success";
     }
     else {

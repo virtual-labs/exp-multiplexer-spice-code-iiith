@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "How is the control signal typically implemented in Ngspice to select between the two inputs of a 2:1 multiplexer?",
+      "answers": {
+        "a": "Using a voltage source.",
+        "b": "Using a current source.",
+        "c": "As a digital signal (0 or 1).",
+        "d": "As a sinusoidal signal."
+      },
+      "explanations": {
+        "a": "Correct. In Ngspice, a voltage source is commonly used as the control signal to select between inputs in a multiplexer.",
+        "b": "Incorrect. A current source is not typically used as a control signal in Ngspice for this purpose.",
+        "c": "Incorrect. While digital signals can be used, it is not very common for control in Ngspice.",
+        "d": "Incorrect. Sinusoidal signals are not typically used as control signals in digital circuits."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the role of the 'VDD' parameter in Ngspice code for a pass-transistor logic circuit?",
+      "answers": {
+        "a": "Input voltage.",
+        "b": "Output voltage.",
+        "c": "Supply voltage.",
+        "d": "Threshold voltage."
+      },
+      "explanations": {
+        "a": "Incorrect. 'VDD' is not typically used to represent input voltage in Ngspice code.",
+        "b": "Incorrect. 'VDD' is not typically used to represent output voltage in Ngspice code.",
+        "c": "Correct. 'VDD' in Ngspice code represents the supply voltage in a pass-transistor logic circuit.",
+        "d": "Incorrect. Threshold voltage is usually represented by a different parameter, not 'VDD'."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In Ngspice code, how is the logic function implemented for a pass-transistor circuit acting as a 2:1 multiplexer?",
+      "answers": {
+        "a": "Using logic gates.",
+        "b": "Using transistor connections.",
+        "c": "Using resistor networks.",
+        "d": "Using capacitor configurations."
+      },
+      "explanations": {
+        "a": "Incorrect. Pass-transistor circuits typically implement logic functions directly using transistor connections.",
+        "b": "Correct. The logic function in a pass-transistor circuit is implemented through the connections and configurations of transistors.",
+        "c": "Incorrect. Resistor networks are not typically used to implement logic functions in pass-transistor circuits.",
+        "d": "Incorrect. Capacitor configurations are not typically used to implement logic functions in pass-transistor circuits."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the purpose of the 'Vt' parameter in Ngspice code for pass-transistor logic?",
+      "answers": {
+        "a": "Input voltage.",
+        "b": "Threshold voltage.",
+        "c": "Output voltage.",
+        "d": "Transistor width and length."
+      },
+      "explanations": {
+        "a": "Incorrect. 'Vt' is not typically used to represent input voltage in Ngspice code.",
+        "b": "Correct. 'Vt' in Ngspice code represents the threshold voltage of the transistors in a pass-transistor logic circuit.",
+        "c": "Incorrect. 'Vt' is not typically used to represent output voltage in Ngspice code.",
+        "d": "Incorrect. Transistor width and length are usually represented by different parameters, not 'Vt'."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How is the pass-transistor logic circuit typically represented in Ngspice code when building a 2:1 multiplexer?",
+      "answers": {
+        "a": "Using 'VDD' and 'GND' symbols.",
+        "b": "As a subcircuit with transistor connections.",
+        "c": "Using behavioral sources.",
+        "d": "As a combination of resistors and capacitors."
+      },
+      "explanations": {
+        "a": "Incorrect. 'VDD' and 'GND' symbols are used for power connections but not for representing the logic circuit itself.",
+        "b": "Correct. The pass-transistor logic circuit is typically represented as a subcircuit with transistor connections in Ngspice code.",
+        "c": "Incorrect. Behavioral sources are used for defining voltage or current behavior, not for representing the entire logic circuit.",
+        "d": "Incorrect. Resistors and capacitors are not the primary components used to represent pass-transistor logic circuits in Ngspice."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the significance of the 'Ron' parameter in Ngspice code for pass-transistor logic circuits?",
+      "answers": {
+        "a": "Transistor resistance when on.",
+        "b": "Transistor resistance when off.",
+        "c": "Threshold voltage.",
+        "d": "Transistor width and length."
+      },
+      "explanations": {
+        "a": "Correct. 'Ron' represents the on-state resistance of the transistors in Ngspice code for pass-transistor logic circuits.",
+        "b": "Incorrect. The off-state resistance is not typically represented by 'Ron'.",
+        "c": "Incorrect. Threshold voltage is usually represented by a different parameter, not 'Ron'.",
+        "d": "Incorrect. Transistor width and length are usually represented by different parameters, not 'Ron'."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How is the output node typically defined in Ngspice code for a pass-transistor logic circuit?",
+      "answers": {
+        "a": "As a voltage source.",
+        "b": "As a current source.",
+        "c": "As a node label.",
+        "d": "As a ground symbol."
+      },
+      "explanations": {
+        "a": "Correct. The output node is typically defined as a voltage source in Ngspice code for a pass-transistor logic circuit.",
+        "b": "Incorrect. The output node is not typically defined as a current source.",
+        "c": "Incorrect. While a node label is used, the output is not usually defined that way",
+        "d": "Incorrect. The output is not defined as a ground symbol."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "How can you simulate the transient behavior of a pass-transistor logic circuit in Ngspice?",
+      "answers": {
+        "a": "Using the .DC analysis.",
+        "b": "Using the .TRAN analysis.",
+        "c": "Using the .AC analysis.",
+        "d": "Using the .OP analysis."
+      },
+      "explanations": {
+        "a": "Incorrect. The .DC analysis is used for DC operating point calculations, not transient behavior.",
+        "b": "Correct. The .TRAN analysis is used to simulate the transient behavior of a circuit in Ngspice.",
+        "c": "Incorrect. The .AC analysis is used for frequency domain analysis, not transient behavior.",
+        "d": "Incorrect. The .OP analysis is used for DC operating point calculations, not transient behavior."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of the 'Rise' and 'Fall' parameters in Ngspice code for transient simulations?",
+      "answers": {
+        "a": "Input voltage levels.",
+        "b": "Threshold voltage.",
+        "c": "Transistor switching times.",
+        "d": "Output voltage levels."
+      },
+      "explanations": {
+        "a": "Incorrect. 'Rise' and 'Fall' parameters are not typically used to represent input voltage levels.",
+        "b": "Incorrect. Threshold voltage is usually represented by a different parameter, not 'Rise' or 'Fall'.",
+        "c": "Correct. 'Rise' and 'Fall' parameters in Ngspice code represent the transistor switching times in transient simulations.",
+        "d": "Incorrect. Output voltage levels are not typically represented by 'Rise' or 'Fall' parameters."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    }
+  ]
+}
